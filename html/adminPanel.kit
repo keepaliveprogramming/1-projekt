@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Control Panel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="dist/css/main.min.css">
+</head>
+
+<body class="admin-body">
+    <div class="loader">
+        <div class="loader__box">
+            <span class="loader__leaf"></span>
+		    <span class="loader__leaf loader__leaf--2"></span>
+		    <span class="loader__leaf loader__leaf--3"></span>
+		    <span class="loader__leaf loader__leaf--4"></span>
+        </div>
+    </div>
+    <p class="modal__alert">---</p>
+    <aside class="login">
+        <div class="login__content">
+            <img src="dist/img/login1.png" alt="Login Picture" class="login__img">
+
+            <form class="login__form" method="POST">
+                <div class="login__box">
+                    <input id="login" class="login__input" type="text" required autocomplete="username">
+                    <label class="login__label" for="login">Login</label>
+                    <img class="login__icon" src="dist/img/user-login.png">
+                </div>
+                <div class="login__box">
+                    <input id="pass" class="login__input" type="password" required autocomplete="current-password">
+                    <label class="login__label" for="pass">Hasło</label>
+                    <img class="login__icon" src="dist/img/pass-login.png">
+                    <span class="login__pass" onmouseenter="showPassword(true)" onmouseleave="showPassword(false)">👀</span>
+                </div>
+                <span class="contact__honey none">
+                    <label for="honey">Jeżeli jesteś człowiekiem, nie wypełniaj tego pola</label>
+                    <input id="honey" type="text" autocomplete="off">
+                </span>
+
+                <button type="submit" class="login__btn btn-animation" autocomplete="off" onclick="checkLogin(event)">Wyślij</button>
+            </form>
+        </div>
+    </aside>
+
+
+    <main>
+
+    </main>
+    <script src="dist/js/main.min.js"></script>
+</body>
+
+</html>
